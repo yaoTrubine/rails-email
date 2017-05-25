@@ -1,0 +1,37 @@
+
+<div class="row">
+ 
+    <%= form_for(@user, url: users_path) do |f| %>
+    <%= render 'shared/error_messages' %>
+ <!--1 -->
+        <label for="user_name">姓名</label>
+        <input class="form-control" id="user_name" name="user[name]" type="text" />
+ <!--2-->
+        <label for="user_phone">电话</label>
+        <input class="form-control" id="user_phone" name="user[phone]" type="text" />
+ <!--3-->
+        <label for="user_email">邮箱</label>
+        <input class="form-control" id="user_email" name="user[email]" type="email" />
+ <!--4 -->
+        <label for="user_company_type">行业类型</label>
+        <input class="form-control" id="user_company_type" name="user[company_type]" type="text" />
+ <!--5 -->
+        <label for="user_company_name">公司名称</label>
+        <input class="form-control" id="user_company_name" name="user[company_name]" type="text" />
+ <!--6 -->
+        <label for="exampleInputFile">文件上传</label>
+        <input  class="form-control" type="file" id="exampleInputFile">
+ <!--7 -->
+        <label for="user_ref_example">参考案例</label>
+        <textarea class="form-control" id="user_ref_example" rows="3" name="user[ref_example]" type="text" /></textarea>
+ <!--8 -->
+        <label for="user_deadline">完成时间</label>
+        <input class="form-control" id="user_deadline" name="user[deadline]" type="date" />
+ <!--9 -->
+        <label for="user_money">预算</label>
+        <input class="form-control" id="user_money" name="user[money]" type="text" />
+
+      <%= f.submit "submit", class: "btn btn-primary" %>
+    <% end %>
+
+</div>
