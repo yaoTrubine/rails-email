@@ -6,6 +6,9 @@ body {
     padding-bottom: 100px;
     max-width: 1080px;
     margin: 0 auto;
+    background-image: url('bg.JPG');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 
 input, textarea, select, .uneditable-input {
@@ -14,7 +17,11 @@ input, textarea, select, .uneditable-input {
   margin-bottom: 15px;
   resize : none;
 }
-
+.btn-default{
+    font-size: 30px;
+    position: relative;
+    bottom: -40px;
+}
 input {
   height: auto !important;
 }
